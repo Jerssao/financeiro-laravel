@@ -8,8 +8,8 @@
 <body>
     <h1>Categories</h1>
     <ul>
-        @foreach ( $categorias as $categoria ) 
-            <li>{{ $categoria }}</li>
+        @foreach ($categorias as $categoria) 
+         <li>{{$categoria['name']}} - {{$categoria['type']}}  - {{$categoria['description']}}</li>   
         @endforeach
     </ul>
 </body>
